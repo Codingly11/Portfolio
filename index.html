@@ -7,9 +7,12 @@
     <title>Resume Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+
             margin: 0;
             padding: 20px;
+            background-color: #141414;
+            letter-spacing: 1pt;
+            font-family: 'Times New Roman', Times, serif;
         }
 
         header {
@@ -17,17 +20,46 @@
             margin-bottom: 20px;
         }
 
-        h1,
-        h2 {
+        h1, h2{
+            color: white;
+        }
+        h3 {
             margin: 5px 0;
+            color: crimson;
         }
 
         p {
             margin: 10px 0;
+            color: white;
         }
 
         .section {
             margin-bottom: 30px;
+        }
+        .section hr {
+            border-top: 1px solid #ccc;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .section  {
+            color: #333;
+        }
+
+        .section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .section ul li {
+            margin-bottom: 5px;
+            color: white;
+        }
+        li{
+            color: white;
+        }
+        #name{
+            font-weight: bold;
         }
     </style>
 </head>
@@ -42,11 +74,11 @@
     <div class="about me">
         <h3>About Me</h3>
         <p>
-            Hello! I'm Dagmawi Dessalegn, a resilient and positive individual with a passion for technology and a zest for life. Born and raised in Addis Ababa, Ethiopia, I embarked on a journey of self-discovery early on.
+            Hello! I'm <span id="name">Dagmawi Dessalegn</span>, a resilient and positive individual with a passion for technology and a zest for life. Born and raised in Addis Ababa, Ethiopia, I embarked on a journey of self-discovery early on.
             
-            I attended Gibson Youth Academy, a prestigious US-based educational institution in Ethiopia, where I honed my academic skills and developed a deep curiosity for technology. During my junior year in high school, I ventured into the professional world as a salesperson for a prominent medical importer and distributor company. Through adaptability and determination, I swiftly transitioned into the role of an associate software engineer within the same company.
+            I attended Gibson Youth Academy, a prestigious US-based educational institution in Ethiopia, where I honed my academic skills and developed a deep curiosity for technology. During my junior year in high school, I ventured into the professional world as an Operations lead assistant for a prominent medical importer and distributor company. Through adaptability and determination, I swiftly transitioned into the role of an associate software engineer within the same company.
             
-            Driven by a desire for knowledge and growth, I pursued a Bachelor's degree in Simulation and Modeling Engineering at Old Dominion University in the United States. Currently a permanent resident in the process of naturalization, I am eager to contribute my skills and experiences to the dynamic world of technology..</p>
+            Driven by a desire for knowledge and growth, I pursued a Bachelor's degree in Simulation and Modeling Engineering at Old Dominion University in the United States. Currently a permanent resident in the process of naturalization, I am eager to contribute my skills and experiences to the dynamic world of technology.</p>
         <hr>
     </div>
 
@@ -68,24 +100,63 @@
     </div>
     <div class="section">
         <h3>Education</h3>
-        <p>Bachelor of Science in Computer Science</p>
-        <p>University Name, Graduation Year</p>
+        <p>Bachelor of Science in Computer engineering- Simulation and Modeling</p>
+        <p>Minor: Computer science</p>
+        <p>Old dominion University, 2022</p>
+        <p>Masters program in simulation and modeling engineering</p>
+        <p>Old dominion University,2026</p>
         <hr>
     </div>
 
     <div class="experience">
         <h3>Experience</h3>
-        <p>Web Developer</p>
-        <p>XYZ Company</p>
-        <p>January 2018 - Present</p>
+        <p>Front-end engineer </p>
+        <p>Rapko Tech. Richmond, Backend Engineer.</p>
+        <p>Richmond,Virginia  2020-2023</p>
         <ul>
-            <li>Designed and developed responsive websites using HTML, CSS, and JavaScript.</li>
+            <li>Exhibit adeptness in data management utilizing Python-based frameworks and tools,
+                orchestrating seamless migration of legacy data into premier Cloud Service like Amazon Web Services, Google Cloud Engine, and Microsoft Azure.</li>
             <li>Collaborated with cross-functional teams to implement new features and enhancements.</li>
-            <li>Optimized website performance and ensured compatibility across different browsers and devices.</li>
+            <li>Implemented container management solutions (e.g., Docker, Kubernetes) to enhance scalability and resource utilization..</li>
             <hr>
         </ul>
-    </div>
 
+    </div>
+    <div class="experience">
+        <h3>Experience</h3>
+        <p>Associate Software Engineer. </p>
+        <p>Biomed Import and wholesale llc.</p>
+        <p>Addis Ababa, Ethiopia 2017-2020</p>
+        <ul>
+            <li>Harnessing expertise in Python and Django framework, engineer a robust inventory
+                management system for Biomed, leveraging MySQL database for efficient data storage
+                and retrieval. Implement sophisticated algorithms for inventory tracking and procurement
+                optimization, ensuring seamless operations and minimizing stockouts.</li>
+            <li>Utilize Python with Django framework to engineer a cutting-edge customer relationship
+                management (CRM) system for Biomed, facilitating seamless tracking of customer
+                interactions and sales leads. Incorporate advanced features such as personalized
+                customer support and analytics dashboards to drive customer satisfaction and loyalty,
+                ultimately fostering long-term relationships and business growth.</li>
+                <li> Optimized CI/CD pipelines to automate the deployment process and improve the reliability of software releases</li>
+            <li>Used react library to develop responsive web-app.</li>
+            <hr>
+        </ul>
+         
+    </div>
+    <div class="experience ">
+        <h3>Experience</h3>
+        <p>Operations manager assistant. </p>
+        <p>Biomed Import and wholesale llc.</p>
+        <p>Addis Ababa, Ethiopia 2016-2017</p>
+        <ul>
+            <li>Collaborate with suppliers to ensure timely delivery of medical devices and resolve any supply chain issues.</li>
+            <li>Communicate with internal teams to coordinate inventory needs and ensure smooth workflow,provide support for operations manager in analyzing logistics data and identifying areas for improvement.</li>
+            <li>Serve as a point of contact for internal and external stakeholders regarding logistics and inventory matters.</li>
+            <li>Played a key role in driving business growth by fostering long-term customer relationships through the CRM system's functionality and capabilities.</li>
+            <hr>
+        </ul>
+         
+    </div>
     <div class="skills">
         <h3>Skills</h3>
         <ul>
@@ -96,8 +167,10 @@
             <li>Version Control (Git)</li>
             <li>Python language</li>
             <li>C++</li>
-            <li> Objiect oriented programming and CS principles</li>
-            <li> VHDL & Verilog</li>
+            <li>Objiect oriented programming and CS principles</li>
+            <li>VHDL & Verilog</li>
+            <li>SQL & NoSQL</li>
+            <li>Good Communicator and team player. </li>
         </ul>
         <hr>
     </div>
@@ -105,8 +178,15 @@
     <div class="contact">
         <h3>Contact</h3>
         <p>Email: Dagidessalegn9@gmail.com</p>
-        <p>Phone: (123) 456-7890</p>
-        <p>Website: yourwebsite.com</p>
+        <p>Phone: 512-577-6523</p>
+        <p>Website: https://codingly11.github.io/Portfolio/</p>
+        <hr>
+    </div>
+    <div class="Volunteering and extra activities">
+        <h3>Volunteering & Activities</h3>
+        <p>Red-Cross Ethiopia: Data organization and managment</p>
+        <p>Goodwill Austin: Computer repairs and diagnosis</p>
+        <p>Ethiopian Evangelical Church in Austin: Media and streaming support</p>
         <hr>
     </div>
     
